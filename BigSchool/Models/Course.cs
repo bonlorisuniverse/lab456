@@ -4,11 +4,13 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace WebApplication2.Models
+namespace Lab04.Models
 {
     public class Course
     {
         public int Id { get; set; }
+
+        public bool IsCanceled { get; set; }
 
         public ApplicationUser Lecturer { get; set; }
         [Required]
